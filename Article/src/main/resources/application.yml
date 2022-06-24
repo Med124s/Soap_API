@@ -1,0 +1,31 @@
+  #server.port = 8001
+   # spring.jpa.hibernate.ddl-auto=create
+    #spring.datasource.url=jdbc:mysql://localhost:3306/school_private
+    #spring.datasource.username=root
+    #spring.datasource.password=1997@benyghil
+    #spring.jpa.properties.hibernate.dialect = org.hibernate.dialect.MySQL5InnoDBDialect
+server:
+  error:
+    include-message: always
+    include-binding-errors: always
+  port:
+    8005
+
+spring:
+  datasource:
+    password: 1997@benyghil
+    url: jdbc:mysql://localhost:3306/Article
+    username: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+        format_sql: true
+    show-sql: true
+
+coder:
+    app:
+      jwtSecret: bezKoderSecretKey
+      jwtExpirationMs: 86400000
